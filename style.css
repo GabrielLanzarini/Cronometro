@@ -1,0 +1,55 @@
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 75px;
+    color: #E6D5B8;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: whitesmoke;
+}
+
+.allbk{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #1B1A17;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.divCronometro{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    background-color: #F0A500;
+    border-radius: 15px;
+    padding: 20px;
+    height: 125px;
+}
+
+.divBotoes{
+    display: flex;
+    width: 250px;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+button{
+    padding: 10px;
+    width: 30%;
+    border: none;
+    background-color: #E45826;
+    color: white;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+button:hover{
+    cursor: pointer;
+}
