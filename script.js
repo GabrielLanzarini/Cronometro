@@ -2,19 +2,30 @@ var horaH1 = document.getElementById("hor");
 var minutoH1 = document.getElementById("min");
 var segundoH1 = document.getElementById("seg");
 
+var hor = 00;
+var min = 00;
+var seg = 00;
+
+var intervalo = setInterval(relogio, 10)
+clearInterval(intervalo);
 
 document.getElementById('butIniciar').addEventListener('click', function(){
-   
-var iniciaRrelogio= setInterval(relogio, 100);
+    intervalo = setInterval(relogio, 10)
 })
 
 document.getElementById('butParar').addEventListener('click', function(){
-    clearInterval(iniciaRrelogio)
+    clearInterval(intervalo);
 })
 
-var hor = 0;
-var min = 0;
-var seg = 0;
+document.getElementById('butReiniciar').addEventListener('click', function(){
+    hor = 0;
+    min = 0;
+    seg = 0;
+    segundoH1.textContent = seg;
+    minutoH1.textContent = min;
+    horaH1.textContent = hor;
+})
+
 
 
 function relogio(){
